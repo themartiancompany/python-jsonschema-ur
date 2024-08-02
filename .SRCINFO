@@ -24,7 +24,6 @@ pkgbase = python-jsonschema
 	makedepends = python-hatch-fancy-pypi-readme
 	depends = python
 	depends = python-attrs
-	depends = python-pyrsistent
 	depends = python-referencing
 	depends = python-jsonschema-specifications
 	optdepends = python-isoduration: for duration format

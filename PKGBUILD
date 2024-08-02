@@ -14,7 +14,6 @@ license=('MIT')
 depends=(
   'python'
   'python-attrs'
-  'python-pyrsistent'
   'python-referencing'
   'python-jsonschema-specifications'
 )

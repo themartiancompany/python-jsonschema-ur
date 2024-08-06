@@ -11,7 +11,7 @@
 _py="python"
 _pkg="jsonschema"
 pkgname="${_py}-${_pkg}"
-pkgver=4.22.0
+pkgver=4.23.0
 pkgrel=1
 pkgdesc='An implementation of JSON Schema validation for Python'
 arch=(
@@ -26,7 +26,7 @@ license=(
 depends=(
   "${_py}"
   "${_py}-attrs"
-  "${_py}-pyrsistent"
+  # "${_py}-pyrsistent"
   "${_py}-referencing"
   "${_py}-jsonschema-specifications"
 )
@@ -65,10 +65,10 @@ source=(
   "${pkgname}::git+${url}#tag=v${pkgver}"
 )
 sha512sums=(
-  '7eff6dc0967af8d0a75a2f288410bbc8ef597fa4f4479bf47663ffd9342f6791c87c1de75bf761a7fea3b13fb603196871dbd49f715001ebff7a3671b044b682'
+  '0bff4113408fe14d591ee1ea501587bbec7d52df0d50b9d8e4bedfca9003f934c8c474015f1806f76ab1c6e37a9c22db5aea94d0d5ef889ad02c6d86a62cf19e'
 )
 b2sums=(
-  'e3810424e3a6c61b7f22bbb25abc7dd1497c36c87398fb4befbd4f706b791ed2fe0a27fd81b7aeded2aadc55bca50a7cde8ae6321f8678a8341fc5ac47b61cd6'
+  '03b9165737b058b1d84be08c5ea11131f69ea77c4c6788eb816689339f7cdf4416cbf8ffc15690ef8917181d94711ad9a55fe5edf11202381002f6a091e4abea'
 )
 
 build() {

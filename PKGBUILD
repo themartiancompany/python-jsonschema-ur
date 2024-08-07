@@ -108,8 +108,11 @@ package() {
     "${_py}" \
       -c \
         "import site; print(site.getsitepackages()[0])")"
+  cd \
+    "${pkgname}"
   "${_py}" \
-    -m installer \
+    -m \
+      installer \
     --destdir="${pkgdir}" \
     dist/*.whl
   # symlink license file
